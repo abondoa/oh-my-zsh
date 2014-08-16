@@ -1,24 +1,4 @@
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> abondoa theme
-=======
->>>>>>> ec63c82383cdf4949afbf1811b0ecfc49a9cbf12
 PROMPT='%{${fg_bold[yellow]}%}%n%{$reset_color%}%{${fg[yellow]}%}@%m%{$reset_color%} $(git_prompt_info)$(svn_prompt_info)%(?,,%{${fg_bold[white]}%}[%?]%{$reset_color%} )%{$fg[yellow]%}%#%{$reset_color%} '
 RPROMPT='%{$fg_bold[cyan]%}$(right_prompt)%{$reset_color%}'
 
@@ -46,12 +26,6 @@ ZSH_THEME_SVN_PROMPT_UNTRACKED=$ZSH_THEME_GIT_PROMPT_UNTRACKED
 ZSH_THEME_SVN_PROMPT_REPLACEMENTS=$ZSH_THEME_GIT_PROMPT_RENAMED
 
 
-<<<<<<< HEAD
-##################
-### TODO
-#################
-=======
->>>>>>> ec63c82383cdf4949afbf1811b0ecfc49a9cbf12
 function right_prompt()
 {
     local TERMWIDTH
