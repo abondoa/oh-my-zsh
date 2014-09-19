@@ -30,11 +30,15 @@ function right_prompt()
 {
     local TERMWIDTH
     (( TERMWIDTH = ${COLUMNS} - 2 ))
-    local promptsize=${#${(%):---(%n@%m:%l)---()--}}
+    local promptsize=${#${(%):--%n@%m %%}}
     local pwdsize=${#${(%):-%~}}
+    gitString=$(git_prompt_info)
+    svnString=$(svn_prompt_info)
+    local zero='%([BSUbfksu]|([FB]|){*})'
+    local gitLength=${#${(S%%)gitString//$~zero/}}
+    local svnLength=${#${(S%%)svnString//$~zero/}}
     
-
-    if [[ "$promptsize + $pwdsize" -gt $TERMWIDTH ]]; then
+    if [[ "$promptsize + $pwdsize + $gitLength + $svnLength" -gt $TERMWIDTH ]]; then
         echo '%c'
     else
         echo '%~'
