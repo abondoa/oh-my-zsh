@@ -1,5 +1,5 @@
 
-PROMPT='%{${fg_bold[yellow]}%}%n%{$reset_color%}%{${fg[yellow]}%}@%m%{$reset_color%} $(git_prompt_info)$(svn_prompt_info)%(?,,%{${fg_bold[white]}%}[%?]%{$reset_color%} )%{$fg[yellow]%}%#%{$reset_color%} '
+PROMPT='%{${fg_bold[yellow]}%}%n%{$reset_color%}%{${fg[yellow]}%}@%m%{$reset_color%}$(version_control_info)%(?,,%{${fg_bold[white]}%}[%?]%{$reset_color%} )%{$fg[yellow]%}%#%{$reset_color%} '
 RPROMPT='%{$fg_bold[cyan]%}$(right_prompt)%{$reset_color%}'
 
 
@@ -24,6 +24,12 @@ ZSH_THEME_SVN_PROMPT_MODIFICATIONS=$ZSH_THEME_GIT_PROMPT_MODIFIED
 ZSH_THEME_SVN_PROMPT_ADDITIONS=$ZSH_THEME_GIT_PROMPT_ADDED
 ZSH_THEME_SVN_PROMPT_UNTRACKED=$ZSH_THEME_GIT_PROMPT_UNTRACKED
 ZSH_THEME_SVN_PROMPT_REPLACEMENTS=$ZSH_THEME_GIT_PROMPT_RENAMED
+
+
+function version_control_info()
+{
+    echo " $(git_prompt_info)$(svn_prompt_info)"
+}
 
 
 function right_prompt()
