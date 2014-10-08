@@ -20,6 +20,8 @@ if [[ -z "$ZSH_CUSTOM" ]]; then
     ZSH_CUSTOM="$ZSH/custom"
 fi
 
+plugins=($plugins pbcopy command-not-found mvn mercurial pip python screen sublime svn web-search autojump svn-fast-info git cp copydir copyfile)
+typeset -U plugins
 
 is_plugin() {
   local base_dir=$1
