@@ -25,10 +25,25 @@ then
 else
     alias history='fc -l 1'
 fi
+# enable color support of ls and also add handy aliases
+alias ls='ls --color=auto'
+alias dir='dir --color=auto'
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+alias cdb='popd>/dev/null'
+alias o='xdg-open'
+alias o.='xdg-open .'
+
+# because I usually fumble my fingers:
+alias æ='ls'
+alias cd..='cd ..'
+
 # List direcory contents
-alias lsa='ls -lah'
-alias l='ls -lah'
-alias ll='ls -lh'
+alias ll='ls -lah'
+alias l='ls'
 alias la='ls -lAh'
 
 alias afind='ack-grep -il'

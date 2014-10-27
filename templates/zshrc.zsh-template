@@ -68,21 +68,7 @@ export PATH="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-# enable color support of ls and also add handy aliases
-alias ls='ls --color=auto'
-alias dir='dir --color=auto'
 
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
-
-alias cdb='popd>/dev/null'
-alias o='xdg-open'
-alias o.='xdg-open .'
-
-# because I usually fumble my fingers:
-alias æ='l'
-alias cd..='cd ..'
 
 # why would you type 'cd dir' if you could just type 'dir'?
 setopt AUTO_CD
