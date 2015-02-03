@@ -53,7 +53,10 @@ plugins=(pbcopy command-not-found dirhistory mvn mercurial pip python screen sub
 export PATH="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+<<<<<<< HEAD
 # # Preferred editor for local and remote sessions
+=======
+>>>>>>> upstream/master
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
