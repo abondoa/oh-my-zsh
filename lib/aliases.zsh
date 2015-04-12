@@ -1,10 +1,4 @@
-# Push and pop directories on directory stack
-alias pu='pushd'
-alias po='popd'
 
-# Basic directory operations
-alias ...='cd ../..'
-alias -- -='cd -'
 
 # Super user
 alias _='sudo'
@@ -26,8 +20,6 @@ else
     alias history='fc -l 1'
 fi
 # enable color support of ls and also add handy aliases
-alias ls='ls --color=auto'
-alias dir='dir --color=auto'
 
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
@@ -41,10 +33,6 @@ alias o.='xdg-open .'
 alias æ='ls'
 alias cd..='cd ..'
 
-# List direcory contents
-alias ll='ls -lah'
-alias l='ls'
-alias la='ls -lAh'
 
 alias afind='ack-grep -il'
 

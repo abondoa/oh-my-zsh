@@ -22,10 +22,11 @@ alias md='mkdir -p'
 alias rd=rmdir
 alias d='dirs -v | head -10'
 
-# List directory contents
-alias lsa='ls -lah'
-alias l='ls -lah'
-alias ll='ls -lh'
+# List directory contents   
+alias ls='ls --color=auto'
+alias dir='dir --color=auto'
+alias ll='ls -lah'
+alias l='ls'
 alias la='ls -lAh'
 
 # Push and pop directories on directory stack
