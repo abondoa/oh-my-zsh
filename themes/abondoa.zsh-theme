@@ -28,7 +28,7 @@ ZSH_THEME_SVN_PROMPT_REPLACEMENTS=$ZSH_THEME_GIT_PROMPT_RENAMED
 
 function version_control_info()
 {
-    echo " $(git_prompt_info)$(svn_prompt_info)"
+    echo " $(git_super_status)$(svn_prompt_info)"
 }
 
 
@@ -38,7 +38,7 @@ function right_prompt()
     (( TERMWIDTH = ${COLUMNS} - 2 ))
     local promptsize=${#${(%):--%n@%m %%}}
     local pwdsize=${#${(%):-%~}}
-    gitString=$(git_prompt_info)
+    gitString=$(git_super_status)
     svnString=$(svn_prompt_info)
     local zero='%([BSUbfksu]|([FB]|){*})'
     local gitLength=${#${(S%%)gitString//$~zero/}}
