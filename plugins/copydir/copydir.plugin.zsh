@@ -1,14 +1,5 @@
+# Copies the pathname of the current directory to the system or X Windows clipboard
 function copydir {
-    if [[ "$#" == 1 ]] then
-        if [[ -a $1 ]] then
-            pushd $1 &> /dev/null
-            pwd | tr -d "\r\n" | pbcopy
-            popd &> /dev/null
-        else
-            echo "copydir: no such file: $1" > /dev/stderr
-            return 1
-        fi
-    else
-        pwd | tr -d "\r\n" | pbcopy
-    fi
+  emulate -L zsh
+  print -n $PWD | clipcopy
 }

@@ -8,6 +8,7 @@ alias -g ....='../../..'
 alias -g .....='../../../..'
 alias -g ......='../../../../..'
 
+alias -- -='cd -'
 alias 1='cd -'
 alias 2='cd -2'
 alias 3='cd -3'
@@ -22,11 +23,10 @@ alias md='mkdir -p'
 alias rd=rmdir
 alias d='dirs -v | head -10'
 
-# List directory contents   
-alias ls='ls --color=auto'
-alias dir='dir --color=auto'
-alias ll='ls -lah'
-alias l='ls'
+# List directory contents
+alias lsa='ls -lah'
+alias l='ls -lah'
+alias ll='ls -lh'
 alias la='ls -lAh'
 
 # Push and pop directories on directory stack
